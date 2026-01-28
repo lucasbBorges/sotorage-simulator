@@ -1,0 +1,3 @@
+br\com\storage_simulator\App.class
+br\com\storage_simulator\domain\request\IORequest.class
+br\com\storage_simulator\domain\request\IOType.class
