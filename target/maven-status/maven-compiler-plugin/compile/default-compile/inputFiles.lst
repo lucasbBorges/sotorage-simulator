@@ -1,3 +1,5 @@
-C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\App.java
-C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\request\IORequest.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\request\IOType.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\device\StorageDevice.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\App.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\metrics\StorageMetrics.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\request\IORequest.java
