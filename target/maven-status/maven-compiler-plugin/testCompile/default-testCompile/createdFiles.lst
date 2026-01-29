@@ -1,7 +1,9 @@
 br\com\storage_simulator\domain\request\IORequestTest.class
 br\com\storage_simulator\infrastructure\clock\SystemClockAdapterTest.class
 br\com\storage_simulator\domain\device\StorageDeviceContractTest$1.class
+br\com\storage_simulator\infrastructure\clock\FakeClockTest.class
 br\com\storage_simulator\application\port\clock\ClockPortcontractTest$1.class
 br\com\storage_simulator\application\port\clock\ClockPortcontractTest.class
 br\com\storage_simulator\domain\device\StorageDeviceContractTest.class
 br\com\storage_simulator\domain\metrics\StorageMetricsTest.class
+br\com\storage_simulator\domain\queue\IOQueueTest.class
