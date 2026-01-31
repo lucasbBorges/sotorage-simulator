@@ -4,6 +4,7 @@ br\com\storage_simulator\App.class
 br\com\storage_simulator\domain\request\IOType.class
 br\com\storage_simulator\domain\device\StorageDevice.class
 br\com\storage_simulator\infrastructure\clock\FakeClock.class
+br\com\storage_simulator\simulation\worker\SyncWorker.class
 br\com\storage_simulator\domain\request\IORequest.class
 br\com\storage_simulator\infrastructure\clock\SystemClockAdapter.class
 br\com\storage_simulator\domain\queue\IOQueue.class
