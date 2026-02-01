@@ -1,6 +1,7 @@
 br\com\storage_simulator\application\port\clock\ClockPort.class
 br\com\storage_simulator\domain\metrics\StorageMetrics.class
 br\com\storage_simulator\App.class
+br\com\storage_simulator\simulation\worker\LatencyModel.class
 br\com\storage_simulator\domain\request\IOType.class
 br\com\storage_simulator\domain\device\StorageDevice.class
 br\com\storage_simulator\infrastructure\clock\FakeClock.class

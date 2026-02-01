@@ -9,16 +9,16 @@ public class SyncWorker {
 	private final IOQueue queue;
 	private final StorageMetrics metrics;
 	private final ClockPort clock;
-	private final long baseLatencyMillis;
+	private final LatencyModel latencyModel;
 	
 	public SyncWorker(IOQueue queue,
 					  StorageMetrics metrics,
 					  ClockPort clock,
-					  long baseLatencyMillis) {
+					  LatencyModel latencyModel) {
 		this.queue = queue;
 		this.metrics = metrics;
 		this.clock = clock;
-		this.baseLatencyMillis = baseLatencyMillis;
+		this.latencyModel = latencyModel;
 	}
 	
 	/*
@@ -44,12 +44,13 @@ public class SyncWorker {
 	}
 	
 	private void simulateLatency() {
+		long latency = latencyModel.nextLatencyMillis();
 		// avançamos o tempo via clock falso
 		if (clock instanceof br.com.storage_simulator.infrastructure.clock.FakeClock fake) {
-			fake.advanceMillis(baseLatencyMillis);
+			fake.advanceMillis(latency);
 		} else {
 			try {
-				Thread.sleep(baseLatencyMillis);
+				Thread.sleep(latency);
 			} catch (InterruptedException e) {
 				Thread.currentThread().interrupt();
 			}

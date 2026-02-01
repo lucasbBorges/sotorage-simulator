@@ -19,6 +19,7 @@ public class SyncWorkerTest {
 		StorageMetrics metrics = new StorageMetrics();
 		IOQueue queue = new IOQueue(1);
 		FakeClock clock = new FakeClock(1000);
+		LatencyModel latencyModel = new LatencyModel(10, 5);
 		
 		IORequest request = new IORequest(
 				UUID.randomUUID(),
@@ -29,13 +30,13 @@ public class SyncWorkerTest {
 		
 		queue.enqueue(request);
 		
-		SyncWorker worker = new SyncWorker(queue, metrics, clock, 50);
+		SyncWorker worker = new SyncWorker(queue, metrics, clock, latencyModel);
 		boolean processed = worker.processOne();
 		
 		assertTrue(processed);
 		assertEquals(1, metrics.getCompletedRequests());
 		assertEquals(1, metrics.getTotalRequests());
-		assertEquals(50L, metrics.getAverageLatencyMillis());
-		assertEquals(1050L, clock.now());
+		assertTrue(metrics.getAverageLatencyMillis() >= 10);
+        assertTrue(metrics.getAverageLatencyMillis() <= 15);
 	}
 }
