@@ -8,4 +8,5 @@ br\com\storage_simulator\infrastructure\clock\FakeClock.class
 br\com\storage_simulator\simulation\worker\SyncWorker.class
 br\com\storage_simulator\domain\request\IORequest.class
 br\com\storage_simulator\infrastructure\clock\SystemClockAdapter.class
+br\com\storage_simulator\simulation\worker\WorkerThread.class
 br\com\storage_simulator\domain\queue\IOQueue.class

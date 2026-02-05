@@ -39,4 +39,29 @@ public class SyncWorkerTest {
 		assertTrue(metrics.getAverageLatencyMillis() >= 10);
         assertTrue(metrics.getAverageLatencyMillis() <= 15);
 	}
+	
+	@Test
+	void shouldProcessRequestsInSeparateThread() throws InterruptedException {
+	    IOQueue queue = new IOQueue(10);
+	    StorageMetrics metrics = new StorageMetrics();
+	    FakeClock clock = new FakeClock(0L);
+
+	    LatencyModel latencyModel = new LatencyModel(5, 0);
+	    SyncWorker syncWorker = new SyncWorker(queue, metrics, clock, latencyModel);
+
+	    WorkerThread workerThread = new WorkerThread(syncWorker);
+	    Thread thread = new Thread(workerThread);
+	    thread.start();
+
+	    queue.enqueue(new IORequest(UUID.randomUUID(), IOType.READ, 64, 0));
+	    queue.enqueue(new IORequest(UUID.randomUUID(), IOType.READ, 64, 0));
+
+	    Thread.sleep(10);
+
+	    workerThread.stop();
+	    thread.join();
+
+	    assertEquals(2, metrics.getCompletedRequests());
+	}
+
 }
