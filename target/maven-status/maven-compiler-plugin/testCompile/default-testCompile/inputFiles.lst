@@ -6,3 +6,4 @@ C:\Users\lcbor\eclipse-workspace\storage-simulator\src\test\java\br\com\storage_
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\test\java\br\com\storage_simulator\application\port\clock\ClockPortcontractTest.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\test\java\br\com\storage_simulator\simulation\worker\SyncWorkerTest.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\test\java\br\com\storage_simulator\domain\queue\IOQueueTest.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\test\java\br\com\storage_simulator\application\port\executor\ExecutorPortContractTest.java

@@ -1,12 +1,13 @@
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\simulation\worker\WorkerThread.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\request\IOType.java
-C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\device\StorageDevice.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\application\port\executor\ExecutorPort.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\App.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\application\port\clock\ClockPort.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\infrastructure\clock\FakeClock.java
+C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\device\StorageDevice.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\infrastructure\clock\SystemClockAdapter.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\simulation\worker\LatencyModel.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\simulation\worker\SyncWorker.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\metrics\StorageMetrics.java
-C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\application\port\clock\ClockPort.java
-C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\infrastructure\clock\FakeClock.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\queue\IOQueue.java
 C:\Users\lcbor\eclipse-workspace\storage-simulator\src\main\java\br\com\storage_simulator\domain\request\IORequest.java

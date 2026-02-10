@@ -1,3 +1,4 @@
+br\com\storage_simulator\application\port\executor\ExecutorPortContractTest.class
 br\com\storage_simulator\domain\request\IORequestTest.class
 br\com\storage_simulator\infrastructure\clock\SystemClockAdapterTest.class
 br\com\storage_simulator\domain\device\StorageDeviceContractTest$1.class
@@ -8,3 +9,4 @@ br\com\storage_simulator\domain\device\StorageDeviceContractTest.class
 br\com\storage_simulator\simulation\worker\SyncWorkerTest.class
 br\com\storage_simulator\domain\metrics\StorageMetricsTest.class
 br\com\storage_simulator\domain\queue\IOQueueTest.class
+br\com\storage_simulator\application\port\executor\ExecutorPortContractTest$1.class
